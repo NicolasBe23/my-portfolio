@@ -26,7 +26,7 @@ export default function RootLayout({
         className={`${montserrat.className} antialiased bg-foreground text-background`}
       >
         <I18nProvider>
-          <div className="flex flex-col py-10 px-32 gap-14">
+          <div className="flex flex-col py-6 px-4 md:py-10 md:px-32 gap-8 md:gap-14">
             <Header />
             {children}
             <Footer />

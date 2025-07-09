@@ -5,7 +5,7 @@ import Message from "./message/page";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-20 px-22">
+    <div className="flex flex-col gap-20 px-10">
       <Description />
       <Experience />
       <div id="projects">

@@ -51,7 +51,7 @@ export default function Footer() {
 
   return (
     <div className="flex justify-center items-center border-b border-gray-800 pb-8 mt-10">
-      <div className="flex gap-18">
+      <div className="flex gap-14">
         {tooltipContent.map((item, idx) => (
           <TooltipProvider key={idx} delayDuration={0}>
             <Tooltip>

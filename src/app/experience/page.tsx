@@ -22,22 +22,24 @@ const ExperienceItem: React.FC<ExperienceProps> = ({
   const { t } = useTranslation();
 
   return (
-    <div className="relative pl-8 pb-12">
+    <div className="relative pl-4 md:pl-8 pb-8 md:pb-12">
       <div className="absolute left-0 top-0 h-full w-[1px] bg-zinc-800"></div>
 
       <div className="absolute left-[-4px] top-0 h-2 w-2 rounded-full bg-zinc-800"></div>
 
-      <div className="flex flex-col gap-4">
-        <span className="text-sm text-zinc-500">{startDate}</span>
+      <div className="flex flex-col gap-2 md:gap-4">
+        <span className="text-xs md:text-sm text-zinc-500">{startDate}</span>
 
         <div>
-          <h3 className="text-xl font-medium text-zinc-100">{company}</h3>
-          <p className="text-lg text-zinc-300">
+          <h3 className="text-lg md:text-xl font-medium text-zinc-100">
+            {company}
+          </h3>
+          <p className="text-base md:text-lg text-zinc-300">
             {t(`experience.companies.${companyKey}.role`)}
           </p>
         </div>
 
-        <p className="text-zinc-400">{description}</p>
+        <p className="text-zinc-400 text-sm md:text-base">{description}</p>
 
         {stack && stack.length > 0 && (
           <div>
@@ -88,12 +90,12 @@ const Experience = () => {
   ];
 
   return (
-    <div className="py-16">
-      <div className="container mx-auto px-4 flex flex-col items-center justify-center">
-        <h2 className="mb-12 text-3xl font-bold text-zinc-100">
+    <div className="py-8 md:py-16">
+      <div className="container mx-auto px-2 md:px-4 flex flex-col items-center justify-center">
+        <h2 className="mb-8 md:mb-12 text-2xl md:text-3xl font-bold text-zinc-100">
           {t("experience.title")}
         </h2>
-        <div className="space-y-8">
+        <div className="space-y-6 md:space-y-8">
           {experiences.map((exp, index) => (
             <ExperienceItem key={index} {...exp} />
           ))}
