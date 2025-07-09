@@ -1,0 +1,80 @@
+{
+  "navigation": {
+    "projects": "Projetos",
+    "contact": "Contato",
+    "resume": "Currículo"
+  },
+  "metadata": {
+    "title": "Nicolas Silva",
+    "description": "Engenheiro de Software"
+  },
+
+  "description": {
+    "education": {
+      "part1": "Desenvolvedor Front End com formação em Desenvolvimento Web e Multimídia no Instituto Politécnico do Cávado e Ave (IPCA).",
+      "part2": "Tenho um forte interesse em transformação digital, acessibilidade e otimização de desempenho, sempre buscando seguir as melhores práticas como código limpo, componentes reutilizáveis e design intuitivo de UI/UX. Sou proativo, colaborativo e resultados-orientado, com habilidades de comunicação excelentes e uma constante vontade de crescer.",
+      "part3": "Fluente em Português, com proficiência intermediária em Inglês."
+    }
+  },
+  "experience": {
+    "title": "Experiência",
+    "stack": "Tecnologias",
+    "current": "Atual",
+    "dates": {
+      "feb": "Fev",
+      "jun": "Jun",
+      "jul": "Jul"
+    },
+    "companies": {
+      "inflightit": {
+        "name": "InflightIT",
+        "role": "Estágio",
+        "description": "Desenvolvimento de softwares e sistemas web."
+      },
+      "otica-gireh": {
+        "name": "Otica Girêh",
+        "role": "Vendedor",
+        "description": "Fornecimento de serviço de atendimento ao cliente e orientação de produtos (lentes e armações)"
+      }
+    }
+  },
+  "projects": {
+    "title": "Projetos",
+    "eye-connect": {
+      "title": "Eye Connect",
+      "description": "Projeto web desenvolvido em Next.js para cadastro de clientes e gerenciamento de consultas oftalmológicas, com foco em eficiência e usabilidade.",
+      "description2": "Projeto web desenvolvido em Next.js para cadastro de clientes e gerenciamento de consultas oftalmológicas. Inclui recursos como agendamento, edição, exclusão de dados e controle de filas, com foco em eficiência e usabilidade."
+    },
+    "houses-papon": {
+      "title": "Houses Papon",
+      "description": "Em desenvolvimento"
+    }
+  },
+  "contact": {
+    "email": "nicolasbezerra13@gmail.com",
+    "social": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn"
+    }
+  },
+  "message": {
+    "title": "Estou sempre aberto a novas oportunidades e ideias.",
+    "description": "Se você tem um projeto em mente, fale comigo.",
+    "name": "Nome",
+    "email": "Email",
+    "message": "Mensagem",
+    "send": "Enviar",
+    "placeholder": {
+      "name": "Nome",
+      "email": "seu@email.com",
+      "message": "Vamos trabalhar juntos!"
+    }
+  },
+  "tooltip": {
+    "download": "Baixar Currículo",
+    "email": "Email",
+    "phone": "Telefone",
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
+  }
+}
