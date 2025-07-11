@@ -7,7 +7,7 @@ import {
   TooltipTrigger,
   TooltipContent,
   TooltipProvider,
-} from "@radix-ui/react-tooltip";
+} from "@/components";
 import { useTranslation } from "react-i18next";
 
 export default function Footer() {

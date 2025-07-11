@@ -4,7 +4,7 @@ import "./globals.css";
 import { I18nProvider } from "./providers";
 import Header from "./header/page";
 import Footer from "./footer/page";
-import { Toaster } from "@/components/ui/sonner";
+import { Toaster } from "@/components";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 

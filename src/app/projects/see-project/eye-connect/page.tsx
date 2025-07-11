@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import { Github } from "lucide-react";
 import { TvMinimalPlay } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 
