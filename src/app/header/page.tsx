@@ -68,7 +68,7 @@ export default function Header() {
             {t("navigation.resume")}
           </Link>
         </div>
-        <div className="flex gap-6 md:gap-4 items-center">
+        <div className="flex gap-6 md:gap-4 items-center ">
           {tooltipContent.map((item, idx) => (
             <TooltipProvider key={idx} delayDuration={0}>
               <Tooltip>

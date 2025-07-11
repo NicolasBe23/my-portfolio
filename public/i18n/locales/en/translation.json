@@ -40,6 +40,7 @@
   },
   "projects": {
     "title": "Projects",
+    "see-project": "See project",
     "eye-connect": {
       "title": "Eye Connect",
       "description": "Web project developed in Next.js for customer registration and management of ophthalmology consultations, with a focus on efficiency and usability.",

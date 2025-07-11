@@ -28,9 +28,9 @@ export default function Projects() {
           </div>
           <button
             onClick={() => router.push("/projects/see-project/eye-connect")}
-            className="text-zinc-100 underline underline-offset-4 text-lg font-medium flex items-center gap-2 w-fit hover:text-zinc-300 transition"
+            className="text-zinc-100 underline underline-offset-4 text-lg font-medium flex items-center gap-2 w-fit hover:text-zinc-300 transition cursor-pointer"
           >
-            See project <ArrowRight className="w-4 h-4" />
+            {t("projects.see-project")} <ArrowRight className="w-4 h-4" />
           </button>
         </div>
         <div className="border border-zinc-800 rounded-lg p-4 md:p-8 w-full md:w-[32rem] flex flex-col justify-between">
@@ -42,8 +42,8 @@ export default function Projects() {
               {t("projects.houses-papon.description")}
             </p>
           </div>
-          <button className="text-zinc-100 underline underline-offset-4 text-lg font-medium flex items-center gap-2 w-fit hover:text-zinc-300 transition">
-            See project <ArrowRight className="w-4 h-4" />
+          <button className="text-zinc-100 underline underline-offset-4 text-lg font-medium flex items-center gap-2 w-fit hover:text-zinc-300 transition cursor-pointer">
+            {t("projects.see-project")} <ArrowRight className="w-4 h-4" />
           </button>
         </div>
       </div>
