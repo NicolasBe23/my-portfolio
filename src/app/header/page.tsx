@@ -77,7 +77,7 @@ export default function Header() {
                     {item.icon}
                   </a>
                 </TooltipTrigger>
-                <TooltipContent className="text-zinc-300 p-1 text-sm">
+                <TooltipContent className="p-1 text-sm">
                   <p>{item.tooltip}</p>
                 </TooltipContent>
               </Tooltip>

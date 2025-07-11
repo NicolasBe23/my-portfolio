@@ -33,7 +33,7 @@ export default function EyeConnect() {
         <Button
           variant="outline"
           size="lg"
-          className="text-black text-lg font-medium flex items-center gap-2 w-fit transition hover:text-gray-600 cursor-pointer"
+          className="text-lg font-medium flex items-center gap-2 w-fit transition cursor-pointer"
           asChild
         >
           <Link
@@ -47,7 +47,7 @@ export default function EyeConnect() {
         <Button
           variant="outline"
           size="lg"
-          className="text-black text-lg font-medium flex items-center gap-2 w-fit transition hover:text-gray-600 cursor-pointer"
+          className="text-lg font-medium flex items-center gap-2 w-fit transition cursor-pointer"
           asChild
         >
           <Link href="https://eyeconnect.netlify.app" target="_blank">

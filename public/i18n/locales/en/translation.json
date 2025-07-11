@@ -64,6 +64,9 @@
     "email": "Email",
     "message": "Message",
     "send": "Send",
+    "sending": "Sending...",
+    "error": "Failed to send message",
+    "success": "Message sent successfully",
     "placeholder": {
       "name": "Name",
       "email": "your@email.com",

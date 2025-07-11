@@ -65,7 +65,7 @@ export default function Footer() {
                   {item.icon}
                 </a>
               </TooltipTrigger>
-              <TooltipContent className="text-zinc-300 p-2 text-sm">
+              <TooltipContent className="p-2 text-sm">
                 <p>{item.tooltip}</p>
               </TooltipContent>
             </Tooltip>

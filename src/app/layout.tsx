@@ -4,6 +4,7 @@ import "./globals.css";
 import { I18nProvider } from "./providers";
 import Header from "./header/page";
 import Footer from "./footer/page";
+import { Toaster } from "@/components/ui/sonner";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -23,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${montserrat.className} antialiased bg-foreground text-background`}
+        className={`${montserrat.className} antialiased bg-background text-foreground`}
       >
         <I18nProvider>
           <div className="flex flex-col py-6 px-4 md:py-10 md:px-32 gap-8 md:gap-14">
@@ -31,6 +32,7 @@ export default function RootLayout({
             {children}
             <Footer />
           </div>
+          <Toaster />
         </I18nProvider>
       </body>
     </html>
