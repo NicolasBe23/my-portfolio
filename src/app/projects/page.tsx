@@ -36,13 +36,18 @@ export default function Projects() {
         <div className="border border-zinc-800 rounded-lg p-4 md:p-8 w-full md:w-[32rem] flex flex-col justify-between">
           <div>
             <h1 className="font-bold mb-2 text-zinc-100">
-              {t("projects.houses-papon.title")}
+              {t("projects.house-management.title")}
             </h1>
             <p className="text-zinc-300 mb-8">
-              {t("projects.houses-papon.description")}
+              {t("projects.house-management.description")}
             </p>
           </div>
-          <button className="text-zinc-100 underline underline-offset-4 text-lg font-medium flex items-center gap-2 w-fit hover:text-zinc-300 transition cursor-pointer">
+          <button
+            onClick={() =>
+              router.push("/projects/see-project/house-management")
+            }
+            className="text-zinc-100 underline underline-offset-4 text-lg font-medium flex items-center gap-2 w-fit hover:text-zinc-300 transition cursor-pointer"
+          >
             {t("projects.see-project")} <ArrowRight className="w-4 h-4" />
           </button>
         </div>

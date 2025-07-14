@@ -4,7 +4,7 @@ import "./globals.css";
 import { I18nProvider } from "./providers";
 import Header from "./header/page";
 import Footer from "./footer/page";
-import { Toaster } from "@/components";
+import { Toaster, NProgressLoader } from "@/components";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -27,6 +27,7 @@ export default function RootLayout({
         className={`${montserrat.className} antialiased bg-background text-foreground`}
       >
         <I18nProvider>
+          <NProgressLoader />
           <div className="flex flex-col py-6 px-4 md:py-10 md:px-32 gap-8 md:gap-14">
             <Header />
             {children}

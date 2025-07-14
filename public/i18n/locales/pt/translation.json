@@ -46,9 +46,9 @@
       "description": "Projeto web desenvolvido em Next.js para cadastro de clientes e gerenciamento de consultas oftalmológicas, com foco em eficiência e usabilidade.",
       "description2": "Projeto web desenvolvido em Next.js para cadastro de clientes e gerenciamento de consultas oftalmológicas. Inclui recursos como agendamento, edição, exclusão de dados e controle de filas, com foco em eficiência e usabilidade."
     },
-    "houses-papon": {
-      "title": "Houses Papon",
-      "description": "Em desenvolvimento"
+    "house-management": {
+      "title": "Gestão de Casas",
+      "description": "Projeto web desenvolvido em Next.js para o gerenciamento inteligente de imóveis. Permite o controle centralizado de informações sobre casas, incluindo cadastro, edição e organização de dados."
     }
   },
   "contact": {

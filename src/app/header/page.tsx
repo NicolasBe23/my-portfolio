@@ -67,8 +67,6 @@ export default function Header() {
           >
             {t("navigation.resume")}
           </Link>
-        </div>
-        <div className="flex gap-6 md:gap-4 items-center ">
           {tooltipContent.map((item, idx) => (
             <TooltipProvider key={idx} delayDuration={0}>
               <Tooltip>
@@ -83,6 +81,8 @@ export default function Header() {
               </Tooltip>
             </TooltipProvider>
           ))}
+        </div>
+        <div className="flex items-center md:ml-4">
           <LanguageSelector />
         </div>
       </div>
