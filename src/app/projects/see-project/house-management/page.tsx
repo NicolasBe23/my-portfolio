@@ -27,7 +27,8 @@ export default function HouseManagement() {
         >
           <div className="flex items-center gap-2">
             <TvMinimalPlay className="w-4 h-4" />
-            Em desenvolvimento <ArrowRight className="w-4 h-4" />
+            {t("projects.house-management.development")}
+            <ArrowRight className="w-4 h-4" />
           </div>
         </Button>
       </div>

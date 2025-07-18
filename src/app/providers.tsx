@@ -4,8 +4,26 @@ import { I18nextProvider } from "react-i18next";
 import { createInstance } from "i18next";
 import { initReactI18next } from "react-i18next";
 import resourcesToBackend from "i18next-resources-to-backend";
-import { getOptions } from "../../public/i18n/settings";
+import { getOptions, languages } from "../../public/i18n/settings";
 import { useEffect, useState } from "react";
+
+function getPreferredLanguage(): string {
+  if (typeof window !== "undefined") {
+    const savedLanguage = localStorage.getItem("preferred-language");
+    if (savedLanguage && languages.includes(savedLanguage)) {
+      return savedLanguage;
+    }
+  }
+
+  if (typeof window !== "undefined") {
+    const browserLanguage = navigator.language.split("-")[0];
+    if (languages.includes(browserLanguage)) {
+      return browserLanguage;
+    }
+  }
+
+  return "en";
+}
 
 export function I18nProvider({ children }: { children: React.ReactNode }) {
   const [i18n, setI18n] = useState<ReturnType<typeof createInstance> | null>(
@@ -14,6 +32,7 @@ export function I18nProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     const instance = createInstance();
+    const preferredLanguage = getPreferredLanguage();
 
     instance
       .use(initReactI18next)
@@ -23,7 +42,7 @@ export function I18nProvider({ children }: { children: React.ReactNode }) {
             import(`../../public/i18n/locales/${language}/${namespace}.json`)
         )
       )
-      .init(getOptions())
+      .init(getOptions(preferredLanguage))
       .then(() => {
         setI18n(instance);
       });

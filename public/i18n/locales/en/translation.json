@@ -41,6 +41,7 @@
   "projects": {
     "title": "Projects",
     "see-project": "See project",
+
     "eye-connect": {
       "title": "Eye Connect",
       "description": "Web project developed in Next.js for customer registration and management of ophthalmology consultations, with a focus on efficiency and usability.",
@@ -48,7 +49,8 @@
     },
     "house-management": {
       "title": "House Management",
-      "description": "Web project developed in Next.js for intelligent property management. It allows centralized control of home information, including registration, editing, and data organization."
+      "description": "Web project developed in Next.js for intelligent property management. It allows centralized control of home information, including registration, editing, and data organization.",
+      "development": "In development"
     }
   },
   "contact": {

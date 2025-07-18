@@ -48,7 +48,8 @@
     },
     "house-management": {
       "title": "Gestão de Casas",
-      "description": "Projeto web desenvolvido em Next.js para o gerenciamento inteligente de imóveis. Permite o controle centralizado de informações sobre casas, incluindo cadastro, edição e organização de dados."
+      "description": "Projeto web desenvolvido em Next.js para o gerenciamento inteligente de imóveis. Permite o controle centralizado de informações sobre casas, incluindo cadastro, edição e organização de dados.",
+      "development": "Em desenvolvimento"
     }
   },
   "contact": {

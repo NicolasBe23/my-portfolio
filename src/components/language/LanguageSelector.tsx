@@ -22,6 +22,15 @@ export default function LanguageSelector() {
     setIsClient(true);
   }, []);
 
+  const handleLanguageChange = (language: string) => {
+    i18n.changeLanguage(language);
+    // Salvar a preferência no localStorage
+    if (typeof window !== "undefined") {
+      localStorage.setItem("preferred-language", language);
+    }
+    setOpen(false);
+  };
+
   if (!isClient || !i18n.isInitialized) {
     return (
       <Button
@@ -52,10 +61,7 @@ export default function LanguageSelector() {
                 <CommandItem
                   value={languageLabels[language] || language}
                   key={language}
-                  onSelect={() => {
-                    i18n.changeLanguage(language);
-                    setOpen(false);
-                  }}
+                  onSelect={() => handleLanguageChange(language)}
                 >
                   {languageLabels[language] || language}
                   <Check
