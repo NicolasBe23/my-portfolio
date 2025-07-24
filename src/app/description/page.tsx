@@ -13,7 +13,8 @@ export default function Description() {
       </div>
       <div className="text-xl font-bold">
         <h1 className="text-center">
-          React, Node.js, Next.js, Tailwind CSS, TypeScript, PostgreSQL
+          React, React Native, Node.js, Next.js, Tailwind CSS, TypeScript,
+          PostgreSQL
         </h1>
       </div>
     </div>

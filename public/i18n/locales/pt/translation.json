@@ -50,6 +50,11 @@
       "title": "Gestão de Casas",
       "description": "Projeto web desenvolvido em Next.js para o gerenciamento inteligente de imóveis. Permite o controle centralizado de informações sobre casas, incluindo cadastro, edição e organização de dados.",
       "development": "Em desenvolvimento"
+    },
+    "food-delivery-web-app": {
+      "title": "App de Delivery de Comida",
+      "description": "Aplicação web desenvolvida com HTML, CSS e JavaScript puro que simula uma plataforma de pedidos online para lanchonetes, focando na prática de manipulação DOM e interfaces funcionais.",
+      "development": "Em desenvolvimento"
     }
   },
   "contact": {

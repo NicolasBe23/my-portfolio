@@ -51,6 +51,11 @@
       "title": "House Management",
       "description": "Web project developed in Next.js for intelligent property management. It allows centralized control of home information, including registration, editing, and data organization.",
       "development": "In development"
+    },
+    "food-delivery-web-app": {
+      "title": "Food Delivery Web App",
+      "description": "Web application developed with HTML, CSS, and pure JavaScript that simulates an online ordering platform for snack bars, focusing on DOM manipulation and functional interfaces.",
+      "development": "In development"
     }
   },
   "contact": {
