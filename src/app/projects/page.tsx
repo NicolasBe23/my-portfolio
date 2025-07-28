@@ -52,6 +52,13 @@ export default function Projects() {
       route: "/projects/see-project/gemini-chatbot-clone",
       status: "completed",
     },
+    {
+      id: "chronos-pomodoro-timer",
+      titleKey: "projects.chronos-pomodoro-timer.title",
+      descriptionKey: "projects.chronos-pomodoro-timer.description",
+      route: "/projects/see-project/chronos-pomodoro-timer",
+      status: "completed",
+    },
   ];
 
   return (

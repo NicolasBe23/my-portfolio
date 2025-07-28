@@ -59,6 +59,10 @@
     "gemini-chatbot-clone": {
       "title": "Clone do Chatbot Gemini",
       "description": "Clone da interface do Google Gemini desenvolvido em React + Vite, com integração da API oficial. Replica fielmente a experiência do chatbot original, permitindo conversas em tempo real através de chave API personalizada."
+    },
+    "chronos-pomodoro-timer": {
+      "title": "Cronômetro Pomodoro",
+      "description": "Projeto web desenvolvido em React + Vite. Permite acompanhar o tempo de trabalho e descanso durante o método Pomodoro, com notificações e funcionalidades adicionais."
     }
   },
   "contact": {
