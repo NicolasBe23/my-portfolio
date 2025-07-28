@@ -3,6 +3,13 @@
 import { useTranslation } from "react-i18next";
 import { ArrowRight } from "lucide-react";
 import { useRouter } from "next/navigation";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 interface Project {
   id: string;
@@ -38,6 +45,13 @@ export default function Projects() {
       route: "/projects/see-project/food-delivery-web-app",
       status: "completed",
     },
+    {
+      id: "gemini-chatbot-clone",
+      titleKey: "projects.gemini-chatbot-clone.title",
+      descriptionKey: "projects.gemini-chatbot-clone.description",
+      route: "/projects/see-project/gemini-chatbot-clone",
+      status: "completed",
+    },
   ];
 
   return (
@@ -47,31 +61,60 @@ export default function Projects() {
           {t("projects.title")}
         </h1>
       </div>
-      <div className="flex flex-col justify-center md:flex-row gap-4 md:gap-10 w-full">
-        {projects.map((project) => (
-          <div
-            key={project.id}
-            className="border border-zinc-800 rounded-lg p-4 md:p-8 w-full md:w-[32rem] flex flex-col justify-between"
-          >
-            <div>
-              <h1 className="font-bold mb-2 text-zinc-100">
-                {t(project.titleKey)}
-              </h1>
-              <p className="text-zinc-300 mb-8">{t(project.descriptionKey)}</p>
-              {project.status === "development" && (
-                <span className="inline-block px-2 py-1 text-xs bg-yellow-600/20 text-yellow-400 rounded-full mb-4">
-                  {t("projects.house-management.development")}
-                </span>
-              )}
-            </div>
-            <button
-              onClick={() => router.push(project.route)}
-              className="text-zinc-100 underline underline-offset-4 text-lg font-medium flex items-center gap-2 w-fit hover:text-zinc-300 transition cursor-pointer"
-            >
-              {t("projects.see-project")} <ArrowRight className="w-4 h-4" />
-            </button>
-          </div>
-        ))}
+
+      <div className="w-full max-w-6xl px-4">
+        <Carousel
+          opts={{
+            align: "start",
+            loop: true,
+            skipSnaps: false,
+            dragFree: true,
+          }}
+          className="w-full"
+        >
+          <CarouselContent className="-ml-2 md:-ml-4">
+            {projects.map((project) => (
+              <CarouselItem
+                key={project.id}
+                className="pl-2 md:pl-4 basis-full sm:basis-1/2 lg:basis-1/3"
+              >
+                <div className="h-full p-1">
+                  <div className="border border-zinc-800 rounded-lg p-4 md:p-6 h-full flex flex-col justify-between hover:border-zinc-700 transition-colors">
+                    <div>
+                      <h1 className="font-bold mb-3 text-zinc-100 text-lg">
+                        {t(project.titleKey)}
+                      </h1>
+                      <p className="text-zinc-300 mb-6 text-sm leading-relaxed">
+                        {t(project.descriptionKey)}
+                      </p>
+                      {project.status === "development" && (
+                        <span className="inline-block px-3 py-1 text-xs bg-yellow-600/20 text-yellow-400 rounded-full mb-4">
+                          {t("projects.house-management.development")}
+                        </span>
+                      )}
+                    </div>
+                    <button
+                      onClick={() => router.push(project.route)}
+                      className="text-zinc-100 underline underline-offset-4 text-base font-medium flex items-center gap-2 w-fit hover:text-zinc-300 transition cursor-pointer mt-auto"
+                    >
+                      {t("projects.see-project")}{" "}
+                      <ArrowRight className="w-4 h-4" />
+                    </button>
+                  </div>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+
+          <CarouselPrevious className="hidden md:flex -left-12 hover:bg-zinc-800" />
+          <CarouselNext className="hidden md:flex -right-12 hover:bg-zinc-800" />
+        </Carousel>
+
+        <div className="flex justify-center mt-6 md:hidden">
+          <p className="text-zinc-400 text-sm">
+            {t("projects.swipe-to-see-more")}
+          </p>
+        </div>
       </div>
     </div>
   );

@@ -41,6 +41,7 @@
   "projects": {
     "title": "Projetos",
     "see-project": "Ver projeto",
+    "swipe-to-see-more": "Deslize para ver mais",
     "eye-connect": {
       "title": "Eye Connect",
       "description": "Projeto web desenvolvido em Next.js para cadastro de clientes e gerenciamento de consultas oftalmológicas, com foco em eficiência e usabilidade.",
@@ -48,13 +49,16 @@
     },
     "house-management": {
       "title": "Gestão de Casas",
-      "description": "Projeto web desenvolvido em Next.js para o gerenciamento inteligente de imóveis. Permite o controle centralizado de informações sobre casas, incluindo cadastro, edição e organização de dados.",
+      "description": "Projeto web desenvolvido em Next.js com backend em C# para o gerenciamento inteligente de imóveis. Permite o controle centralizado de informações sobre casas, incluindo cadastro, edição e organização de dados.",
       "development": "Em desenvolvimento"
     },
     "food-delivery-web-app": {
       "title": "App de Delivery de Comida",
-      "description": "Aplicação web desenvolvida com HTML, CSS e JavaScript puro que simula uma plataforma de pedidos online para lanchonetes, focando na prática de manipulação DOM e interfaces funcionais.",
-      "development": "Em desenvolvimento"
+      "description": "Aplicação web desenvolvida com HTML, CSS e JavaScript puro que simula uma plataforma de pedidos online para lanchonetes, focando na prática de manipulação DOM e interfaces funcionais."
+    },
+    "gemini-chatbot-clone": {
+      "title": "Clone do Chatbot Gemini",
+      "description": "Clone da interface do Google Gemini desenvolvido em React + Vite, com integração da API oficial. Replica fielmente a experiência do chatbot original, permitindo conversas em tempo real através de chave API personalizada."
     }
   },
   "contact": {

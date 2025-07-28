@@ -41,7 +41,7 @@
   "projects": {
     "title": "Projects",
     "see-project": "See project",
-
+    "swipe-to-see-more": "Swipe to see more",
     "eye-connect": {
       "title": "Eye Connect",
       "description": "Web project developed in Next.js for customer registration and management of ophthalmology consultations, with a focus on efficiency and usability.",
@@ -49,13 +49,16 @@
     },
     "house-management": {
       "title": "House Management",
-      "description": "Web project developed in Next.js for intelligent property management. It allows centralized control of home information, including registration, editing, and data organization.",
+      "description": "Web project developed in Next.js with C# backend for intelligent property management. It allows centralized control of home information, including registration, editing, and data organization.",
       "development": "In development"
     },
     "food-delivery-web-app": {
       "title": "Food Delivery Web App",
-      "description": "Web application developed with HTML, CSS, and pure JavaScript that simulates an online ordering platform for snack bars, focusing on DOM manipulation and functional interfaces.",
-      "development": "In development"
+      "description": "Web application developed with HTML, CSS, and pure JavaScript that simulates an online ordering platform for snack bars, focusing on DOM manipulation and functional interfaces."
+    },
+    "gemini-chatbot-clone": {
+      "title": "Gemini Chatbot Clone",
+      "description": "Web project developed in React + Vite, with integration of the official API. It faithfully reproduces the original chatbot experience, allowing real-time conversations through a custom API key."
     }
   },
   "contact": {
