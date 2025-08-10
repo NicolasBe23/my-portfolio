@@ -4,7 +4,6 @@ import { useTranslation } from "react-i18next";
 import { ArrowRight, Github } from "lucide-react";
 import { Button } from "@/components";
 import Image from "next/image";
-import { useEffect, useState } from "react";
 import {
   Carousel,
   CarouselContent,
@@ -13,12 +12,6 @@ import {
 
 export default function MovieAppMobile() {
   const { t } = useTranslation();
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const checkMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-    setIsMobile(checkMobile);
-  }, []);
 
   const carouselImages = [
     "/images/movie-app-mobile-1.jpg",
@@ -80,20 +73,18 @@ export default function MovieAppMobile() {
         </Button>
       </div>
 
-      {!isMobile && (
-        <div className="flex flex-col items-center gap-10 mt-8">
-          <p className="text-zinc-300 text-sm max-w-md text-center">
-            {t("projects.movie-app-mobile.download-expo-go")}
-          </p>
-          <Image
-            src="/images/movie-app-qrcode.png"
-            alt="QR Code do Movie App"
-            width={200}
-            height={200}
-            className="rounded-lg border border-gray-700"
-          />
-        </div>
-      )}
+      <div className="flex flex-col items-center gap-10 mt-8">
+        <p className="text-zinc-300 text-sm max-w-md text-center">
+          {t("projects.movie-app-mobile.download-expo-go")}
+        </p>
+        <Image
+          src="/images/movie-app-qrcode.png"
+          alt="QR Code do Movie App"
+          width={200}
+          height={200}
+          className="rounded-lg border border-gray-700"
+        />
+      </div>
     </div>
   );
 }
