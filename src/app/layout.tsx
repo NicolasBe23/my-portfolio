@@ -24,13 +24,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${montserrat.className} antialiased bg-background text-foreground`}
+        className={`${montserrat.className} antialiased bg-background text-foreground min-h-screen flex flex-col`}
       >
         <I18nProvider>
           <NProgressLoader />
-          <div className="flex flex-col py-6 px-4 md:py-10 md:px-32 gap-8 md:gap-14">
+          <div className="flex flex-1 flex-col py-6 px-4 md:py-10 md:px-32 gap-8 md:gap-14">
             <Header />
-            {children}
+            <main className="flex-1 py-6 px-4 md:py-10 md:px-32 gap-8 md:gap-14">
+              {children}
+            </main>
             <Footer />
           </div>
           <Toaster />

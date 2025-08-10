@@ -59,6 +59,13 @@ export default function Projects() {
       route: "/projects/see-project/chronos-pomodoro-timer",
       status: "completed",
     },
+    {
+      id: "movie-app-mobile",
+      titleKey: "projects.movie-app-mobile.title",
+      descriptionKey: "projects.movie-app-mobile.description",
+      route: "/projects/see-project/movie-app-mobile",
+      status: "development",
+    },
   ];
 
   return (

@@ -63,6 +63,12 @@
     "chronos-pomodoro-timer": {
       "title": "Cronômetro Pomodoro",
       "description": "Projeto web desenvolvido em React + Vite. Permite acompanhar o tempo de trabalho e descanso durante o método Pomodoro, com notificações e funcionalidades adicionais."
+    },
+    "movie-app-mobile": {
+      "title": "App de Filmes",
+      "description": "Aplicação mobile desenvolvida com React Native e Expo. Permite acompanhar informações sobre filmes, incluindo título, ano, avaliação, com uma interface intuitiva e responsiva.",
+      "development": "Em desenvolvimento",
+      "download-expo-go": "Este aplicativo é para dispositivos móveis. Baixe o app Expo Go no seu telemóvel e escaneie o QR Code abaixo para abrir o aplicativo."
     }
   },
   "contact": {
