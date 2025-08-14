@@ -66,7 +66,7 @@ const Experience = () => {
 
   const experiences = [
     {
-      startDate: "2025 - Current",
+      startDate: "2025 - " + t("experience.current"),
       company: "Freelancer",
       companyKey: "freelancer",
       stack: [
