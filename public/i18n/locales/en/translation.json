@@ -35,6 +35,11 @@
         "name": "Otica Girêh",
         "role": "seller",
         "description": "Provided in-person customer service and product guidance (optical lenses and frames)"
+      },
+      "freelancer": {
+        "name": "Freelancer",
+        "role": "Front End Developer",
+        "description": "Development of responsive websites and web applications for personal, study, and potential commercial projects."
       }
     }
   },

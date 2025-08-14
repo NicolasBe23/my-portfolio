@@ -66,6 +66,22 @@ const Experience = () => {
 
   const experiences = [
     {
+      startDate: "2025 - Current",
+      company: "Freelancer",
+      companyKey: "freelancer",
+      stack: [
+        "React",
+        "React Native",
+        "Next",
+        "JavaScript",
+        "TypeScript",
+        "Tailwind CSS",
+        "Node.js",
+        "PostgreSQL",
+      ],
+      description: t("experience.companies.freelancer.description"),
+    },
+    {
       startDate: `${t("experience.dates.feb")} - ${t(
         "experience.dates.jul"
       )} - 2025`,

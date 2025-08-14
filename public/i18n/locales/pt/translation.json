@@ -35,6 +35,11 @@
         "name": "Otica Girêh",
         "role": "Vendedor",
         "description": "Fornecimento de serviço de atendimento ao cliente e orientação de produtos (lentes e armações)"
+      },
+      "freelancer": {
+        "name": "Freelancer",
+        "role": "Desenvolvedor Front End",
+        "description": "Desenvolvimento de websites e aplicativos web responsivos para projetos pessoais, estudos e projetos comerciais potenciais."
       }
     }
   },

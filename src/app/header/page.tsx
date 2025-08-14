@@ -44,7 +44,7 @@ export default function Header() {
   ];
 
   return (
-    <div className="flex flex-col md:flex-row md:justify-between md:items-center border-b border-gray-800 pb-4 px-2 md:px-0">
+    <div className="flex flex-col md:flex-row md:justify-between md:items-center border-b border-gray-800 pb-4 px-2 md:p-4">
       <div
         className="text-xl md:text-2xl cursor-pointer hover:text-muted-foreground transition leading-tight md:leading-normal text-center md:text-left mb-4 md:mb-0"
         onClick={() => router.push("/")}
