@@ -1,6 +1,5 @@
 "use client";
 
-import { Github, Linkedin, Mail, Phone, FileUser } from "lucide-react";
 import { useEffect, useState } from "react";
 import {
   Tooltip,
@@ -9,6 +8,7 @@ import {
   TooltipProvider,
 } from "@/components";
 import { useTranslation } from "react-i18next";
+import { footerSocialLinks } from "@/constants";
 
 export default function Footer() {
   const [mounted, setMounted] = useState(false);
@@ -21,33 +21,11 @@ export default function Footer() {
     return null;
   }
 
-  const tooltipContent = [
-    {
-      href: "/pdf/Resume_-_Nicolas_Silva.pdf",
-      icon: <FileUser size={18} />,
-      tooltip: t("tooltip.download"),
-    },
-    {
-      href: "mailto:nicolasbezerra13@gmail.com",
-      icon: <Mail size={18} />,
-      tooltip: t("tooltip.email"),
-    },
-    {
-      href: "tel:+351968899318",
-      icon: <Phone size={18} />,
-      tooltip: t("tooltip.phone"),
-    },
-    {
-      href: "https://github.com/NicolasBe23",
-      icon: <Github size={18} />,
-      tooltip: t("tooltip.github"),
-    },
-    {
-      href: "https://www.linkedin.com/in/nicolas-bezerra/",
-      icon: <Linkedin size={18} />,
-      tooltip: t("tooltip.linkedin"),
-    },
-  ];
+  const tooltipContent = footerSocialLinks.map((item) => ({
+    href: item.href,
+    icon: item.icon,
+    tooltip: t(item.tooltipKey),
+  }));
 
   return (
     <div className="flex justify-center items-center border-b border-gray-800 pb-8 mt-10">

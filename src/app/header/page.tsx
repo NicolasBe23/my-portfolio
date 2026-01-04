@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { Github, Linkedin, Mail } from "lucide-react";
 import { LanguageSelector } from "@/components";
 import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
@@ -12,6 +11,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import { headerSocialLinks } from "@/constants";
 
 export default function Header() {
   const { t } = useTranslation();
@@ -25,23 +25,11 @@ export default function Header() {
     return null;
   }
 
-  const tooltipContent = [
-    {
-      href: "https://github.com/NicolasBe23",
-      icon: <Github size={18} />,
-      tooltip: t("tooltip.github"),
-    },
-    {
-      href: "https://www.linkedin.com/in/nicolas-bezerra/",
-      icon: <Linkedin size={18} />,
-      tooltip: t("tooltip.linkedin"),
-    },
-    {
-      href: "mailto:nicolasbezerra13@gmail.com",
-      icon: <Mail size={18} />,
-      tooltip: t("tooltip.email"),
-    },
-  ];
+  const tooltipContent = headerSocialLinks.map((item) => ({
+    href: item.href,
+    icon: item.icon,
+    tooltip: t(item.tooltipKey),
+  }));
 
   return (
     <div className="flex flex-col md:flex-row md:justify-between md:items-center border-b border-gray-800 pb-4 px-2 md:p-4">
