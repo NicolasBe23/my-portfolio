@@ -32,11 +32,11 @@ export default function Projects() {
       status: "completed",
     },
     {
-      id: "house-management",
-      titleKey: "projects.house-management.title",
-      descriptionKey: "projects.house-management.description",
-      route: "/projects/see-project/house-management",
-      status: "development",
+      id: "law-management",
+      titleKey: "projects.law-management.title",
+      descriptionKey: "projects.law-management.description",
+      route: "/projects/see-project/law-management",
+      status: "completed",
     },
     {
       id: "food-delivery-web-app",
@@ -64,6 +64,13 @@ export default function Projects() {
       titleKey: "projects.movie-app-mobile.title",
       descriptionKey: "projects.movie-app-mobile.description",
       route: "/projects/see-project/movie-app-mobile",
+      status: "development",
+    },
+    {
+      id: "house-management",
+      titleKey: "projects.house-management.title",
+      descriptionKey: "projects.house-management.description",
+      route: "/projects/see-project/house-management",
       status: "development",
     },
   ];

@@ -58,6 +58,11 @@
       "description": "Projeto web desenvolvido em Next.js com backend em C# para o gerenciamento inteligente de imóveis. Permite o controle centralizado de informações sobre casas, incluindo cadastro, edição e organização de dados.",
       "development": "Em desenvolvimento"
     },
+    "law-management": {
+      "title": "Gestão de Processos Judiciais",
+      "description": "Projeto web desenvolvido em Next.js com backend em Strapi para o gerenciamento inteligente de processos judiciais. Permite o controle centralizado de informações sobre processos judiciais, incluindo cadastro, edição e organização de dados.",
+      "completed": "Completo"
+    },
     "food-delivery-web-app": {
       "title": "App de Delivery de Comida",
       "description": "Aplicação web desenvolvida com HTML, CSS e JavaScript puro que simula uma plataforma de pedidos online para lanchonetes, focando na prática de manipulação DOM e interfaces funcionais."
