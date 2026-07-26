@@ -49,7 +49,7 @@ export default function Header() {
           </Link>
           <Link
             className="hover:text-muted-foreground"
-            href="/pdf/Resume_-_Nicolas_Silva"
+            href="/pdf/Resume_-_Nicolas_Silva.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
