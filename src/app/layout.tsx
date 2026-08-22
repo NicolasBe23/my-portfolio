@@ -1,6 +1,7 @@
+// @ts-ignore
+import "./globals.css";
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
-import "./globals.css";
 import { I18nProvider } from "./providers";
 import Header from "./header/page";
 import Footer from "./footer/page";
@@ -10,7 +11,7 @@ const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Hi, I'm Nicolas Silva",
-  description: "Software Engineer",
+  description: "Full-Stack Developer",
   icons: {
     icon: "/images/favicon.ico",
   },

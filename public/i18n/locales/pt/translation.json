@@ -12,7 +12,7 @@
   "description": {
     "technologies": "Tecnologias que trabalho",
     "education": {
-      "part1": "Desenvolvedor Front End com formação em Desenvolvimento Web e Multimídia no Instituto Politécnico do Cávado e Ave (IPCA).",
+      "part1": "Desenvolvedor Full-Stack com formação em Desenvolvimento Web e Multimídia no Instituto Politécnico do Cávado e Ave (IPCA).",
       "part2": "Tenho um forte interesse em transformação digital, acessibilidade e otimização de desempenho, sempre buscando seguir as melhores práticas como código limpo, componentes reutilizáveis e design intuitivo de UI/UX. Sou proativo, colaborativo e resultados-orientado, com habilidades de comunicação excelentes e uma constante vontade de crescer.",
       "part3": "Fluente em Português, com proficiência intermediária em Inglês."
     }
@@ -20,27 +20,30 @@
   "experience": {
     "title": "Experiência",
     "stack": "Tecnologias",
-    "current": "Atual",
+
     "dates": {
-      "feb": "Fev",
-      "jun": "Jun",
-      "jul": "Jul"
+      "freelancer": "2025 - Atual",
+      "inflightit": "Fev - Jul - 2025",
+      "otica": "2021 - 2023"
     },
+
     "companies": {
       "inflightit": {
         "name": "InflightIT",
         "role": "Estágio",
-        "description": "Desenvolvimento de softwares e sistemas web."
+        "description": "Desenvolvimento de software e sistemas web."
       },
+
       "otica-gireh": {
-        "name": "Otica Girêh",
+        "name": "Ótica Girêh",
         "role": "Vendedor",
-        "description": "Fornecimento de serviço de atendimento ao cliente e orientação de produtos (lentes e armações)"
+        "description": "Atendimento presencial ao cliente e orientação na escolha de lentes e armações."
       },
+
       "freelancer": {
         "name": "Freelancer",
         "role": "Desenvolvedor Front End",
-        "description": "Desenvolvimento de websites e aplicativos web responsivos para projetos pessoais, estudos e projetos comerciais potenciais."
+        "description": "Desenvolvimento de websites responsivos e aplicações web para projetos pessoais, académicos e potenciais projetos comerciais."
       }
     }
   },

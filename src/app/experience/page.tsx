@@ -3,51 +3,52 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import "@/public/i18n";
+import { experiences } from "@/constants/experience";
 
 interface ExperienceProps {
-  startDate: string;
-  company: string;
+  dateKey: string;
   companyKey: string;
   stack?: string[];
-  description: string;
 }
 
 const ExperienceItem: React.FC<ExperienceProps> = ({
-  startDate,
-  company,
+  dateKey,
   companyKey,
   stack = [],
-  description,
 }) => {
   const { t } = useTranslation();
 
   return (
-    <div className="relative pl-4 md:pl-8 pb-8 md:pb-12">
-      <div className="absolute left-0 top-0 h-full w-[1px] bg-zinc-800"></div>
+    <div className="relative pl-4 pb-8 md:pl-8 md:pb-12">
+      <div className="absolute left-0 top-0 h-full w-[1px] bg-zinc-800" />
 
-      <div className="absolute left-[-4px] top-0 h-2 w-2 rounded-full bg-zinc-800"></div>
+      <div className="absolute left-[-4px] top-0 h-2 w-2 rounded-full bg-zinc-800" />
 
       <div className="flex flex-col gap-2 md:gap-4">
-        <span className="text-xs md:text-sm text-zinc-500">{startDate}</span>
+        <span className="text-xs text-zinc-500 md:text-sm">{t(dateKey)}</span>
 
         <div>
-          <h3 className="text-lg md:text-xl font-medium text-zinc-100">
-            {company}
+          <h3 className="text-lg font-medium text-zinc-100 md:text-xl">
+            {t(`experience.companies.${companyKey}.name`)}
           </h3>
-          <p className="text-base md:text-lg text-zinc-300">
+
+          <p className="text-base text-zinc-300 md:text-lg">
             {t(`experience.companies.${companyKey}.role`)}
           </p>
         </div>
 
-        <p className="text-zinc-400 text-sm md:text-base">{description}</p>
+        <p className="text-sm text-zinc-400 md:text-base">
+          {t(`experience.companies.${companyKey}.description`)}
+        </p>
 
-        {stack && stack.length > 0 && (
+        {stack.length > 0 && (
           <div>
             <p className="mb-2 text-zinc-300">{t("experience.stack")}:</p>
+
             <div className="flex flex-wrap gap-2">
-              {stack.map((tech, index) => (
+              {stack.map((tech) => (
                 <span
-                  key={index}
+                  key={tech}
                   className="rounded bg-zinc-800/50 px-3 py-1 text-sm text-zinc-300"
                 >
                   {tech}
@@ -64,56 +65,16 @@ const ExperienceItem: React.FC<ExperienceProps> = ({
 const Experience = () => {
   const { t } = useTranslation();
 
-  const experiences = [
-    {
-      startDate: "2025 - " + t("experience.current"),
-      company: "Freelancer",
-      companyKey: "freelancer",
-      stack: [
-        "React",
-        "React Native",
-        "Next",
-        "JavaScript",
-        "TypeScript",
-        "Tailwind CSS",
-        "Node.js",
-        "PostgreSQL",
-      ],
-      description: t("experience.companies.freelancer.description"),
-    },
-    {
-      startDate: `${t("experience.dates.feb")} - ${t(
-        "experience.dates.jul"
-      )} - 2025`,
-      company: "InflightIT",
-      companyKey: "inflightit",
-      stack: [
-        "React",
-        "Next",
-        "JavaScript",
-        "TypeScript",
-        "Material UI",
-        "Strapi",
-      ],
-      description: t("experience.companies.inflightit.description"),
-    },
-    {
-      startDate: "2021 - 2023",
-      company: "Otica Girêh",
-      companyKey: "otica-gireh",
-      description: t("experience.companies.otica-gireh.description"),
-    },
-  ];
-
   return (
     <div className="py-8 md:py-16">
-      <div className="container mx-auto px-2 md:px-4 flex flex-col items-center justify-center">
-        <h2 className="mb-8 md:mb-12 text-2xl md:text-3xl font-bold text-zinc-100">
+      <div className="container mx-auto flex flex-col items-center justify-center px-2 md:px-4">
+        <h2 className="mb-8 text-2xl font-bold text-zinc-100 md:mb-12 md:text-3xl">
           {t("experience.title")}
         </h2>
+
         <div className="space-y-6 md:space-y-8">
-          {experiences.map((exp, index) => (
-            <ExperienceItem key={index} {...exp} />
+          {experiences.map((experience) => (
+            <ExperienceItem key={experience.companyKey} {...experience} />
           ))}
         </div>
       </div>

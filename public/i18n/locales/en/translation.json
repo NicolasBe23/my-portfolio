@@ -6,13 +6,13 @@
   },
   "metadata": {
     "title": "Nicolas Silva",
-    "description": "Software Engineer"
+    "description": "Full-Stack Developer"
   },
 
   "description": {
     "technologies": "Technologies I work with",
     "education": {
-      "part1": "Front End Developer with a degree in Web and Multimedia Development from the Instituto Politécnico do Cávado e do Ave (IPCA).",
+      "part1": "Full-Stack Developer with a degree in Web and Multimedia Development from the Instituto Politécnico do Cávado e do Ave (IPCA).",
       "part2": "I have a strong interest in digital transformation, accessibility, and performance optimization, always aiming to follow best practices such as clean code, reusable components, and intuitive UI/UX design.  I'm proactive, collaborative, and results-driven, with excellent communication skills and a constant desire to grow.",
       "part3": "Fluent in Portuguese, with intermediate English proficiency."
     }
@@ -20,23 +20,26 @@
   "experience": {
     "title": "Experience",
     "stack": "Stack",
-    "current": "Current",
+
     "dates": {
-      "feb": "Feb",
-      "jun": "Jun",
-      "jul": "Jul"
+      "freelancer": "2025 - Present",
+      "inflightit": "Feb - Jul - 2025",
+      "otica": "2021 - 2023"
     },
+
     "companies": {
       "inflightit": {
         "name": "InflightIT",
         "role": "Internship",
         "description": "Development of software and web systems."
       },
+
       "otica-gireh": {
         "name": "Otica Girêh",
-        "role": "seller",
-        "description": "Provided in-person customer service and product guidance (optical lenses and frames)"
+        "role": "Seller",
+        "description": "Provided in-person customer service and product guidance (optical lenses and frames)."
       },
+
       "freelancer": {
         "name": "Freelancer",
         "role": "Front End Developer",
