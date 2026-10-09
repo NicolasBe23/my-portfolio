@@ -35,7 +35,7 @@ export const footerSocialLinks = [
     tooltipKey: "tooltip.email",
   },
   {
-    href: "/pdf/Resume_-_Nicolas_Silva.pdf",
+    href: "/pdf/Resume_Nicolas.pdf",
     icon: <FileUser size={18} />,
     tooltipKey: "tooltip.download",
   },

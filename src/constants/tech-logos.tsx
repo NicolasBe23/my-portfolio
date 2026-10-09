@@ -7,6 +7,11 @@ import {
   SiDocker,
   SiPostgresql,
   SiTailwindcss,
+  SiJavascript,
+  SiGit,
+  SiNestjs,
+  SiPrisma,
+  SiGithub,
 } from "react-icons/si";
 
 export const techLogos = [
@@ -49,5 +54,30 @@ export const techLogos = [
     node: <SiDocker className="text-white" />,
     title: "Docker",
     href: "https://www.docker.com",
+  },
+  {
+    node: <SiJavascript className="text-white" />,
+    title: "JavaScript",
+    href: "https://www.javascript.com",
+  },
+  {
+    node: <SiGit className="text-white" />,
+    title: "Git",
+    href: "https://git-scm.com",
+  },
+  {
+    node: <SiNestjs className="text-white" />,
+    title: "NestJS",
+    href: "https://nestjs.com",
+  },
+  {
+    node: <SiPrisma className="text-white" />,
+    title: "Prisma",
+    href: "https://www.prisma.io",
+  },
+  {
+    node: <SiGithub className="text-white" />,
+    title: "GitHub",
+    href: "https://github.com",
   },
 ];

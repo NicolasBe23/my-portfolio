@@ -84,17 +84,6 @@ export default function LawManagement() {
             GitHub <ArrowRight className="w-4 h-4" />
           </Link>
         </Button>
-        <Button
-          variant="outline"
-          size="lg"
-          className="text-lg font-medium flex items-center gap-2 w-fit transition cursor-pointer"
-          asChild
-        >
-          <Link href="https://lawyermanager-front.onrender.com" target="_blank">
-            <TvMinimalPlay className="w-4 h-4" />
-            Live Demo <ArrowRight className="w-4 h-4" />
-          </Link>
-        </Button>
       </div>
     </div>
   );

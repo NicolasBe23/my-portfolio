@@ -10,70 +10,15 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-
-interface Project {
-  id: string;
-  titleKey: string;
-  descriptionKey: string;
-  route: string;
-  status?: "development" | "completed";
-}
+import { projects } from "@/constants/projects";
 
 export default function Projects() {
   const { t } = useTranslation();
   const router = useRouter();
 
-  const projects: Project[] = [
-    {
-      id: "eye-connect",
-      titleKey: "projects.eye-connect.title",
-      descriptionKey: "projects.eye-connect.description",
-      route: "/projects/see-project/eye-connect",
-      status: "completed",
-    },
-    {
-      id: "law-management",
-      titleKey: "projects.law-management.title",
-      descriptionKey: "projects.law-management.description",
-      route: "/projects/see-project/law-management",
-      status: "completed",
-    },
-    {
-      id: "food-delivery-web-app",
-      titleKey: "projects.food-delivery-web-app.title",
-      descriptionKey: "projects.food-delivery-web-app.description",
-      route: "/projects/see-project/food-delivery-web-app",
-      status: "completed",
-    },
-    {
-      id: "gemini-chatbot-clone",
-      titleKey: "projects.gemini-chatbot-clone.title",
-      descriptionKey: "projects.gemini-chatbot-clone.description",
-      route: "/projects/see-project/gemini-chatbot-clone",
-      status: "completed",
-    },
-    {
-      id: "chronos-pomodoro-timer",
-      titleKey: "projects.chronos-pomodoro-timer.title",
-      descriptionKey: "projects.chronos-pomodoro-timer.description",
-      route: "/projects/see-project/chronos-pomodoro-timer",
-      status: "completed",
-    },
-    {
-      id: "movie-app-mobile",
-      titleKey: "projects.movie-app-mobile.title",
-      descriptionKey: "projects.movie-app-mobile.description",
-      route: "/projects/see-project/movie-app-mobile",
-      status: "development",
-    },
-    {
-      id: "house-management",
-      titleKey: "projects.house-management.title",
-      descriptionKey: "projects.house-management.description",
-      route: "/projects/see-project/house-management",
-      status: "development",
-    },
-  ];
+  const handleSeeProject = (route: string) => {
+    router.push(route);
+  };
 
   return (
     <div className="flex flex-col items-center justify-center">
@@ -115,7 +60,7 @@ export default function Projects() {
                       )}
                     </div>
                     <button
-                      onClick={() => router.push(project.route)}
+                      onClick={() => handleSeeProject(project.route)}
                       className="text-zinc-100 underline underline-offset-4 text-base font-medium flex items-center gap-2 w-fit hover:text-zinc-300 transition cursor-pointer mt-auto"
                     >
                       {t("projects.see-project")}{" "}
